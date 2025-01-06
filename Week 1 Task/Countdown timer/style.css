@@ -1,4 +1,3 @@
-/* General Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -13,7 +12,6 @@ body {
     align-items: center;
 }
 
-/* Header with Glow Effect */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -21,16 +19,14 @@ h1 {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff80ff, 0 0 30px #ff80ff, 0 0 40px #ff80ff;
 }
 
-/* Blur Effect Styling */
 .blur-effect {
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0.2);
     padding: 15px 20px;
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px); /* Apply blur effect */
+    backdrop-filter: blur(10px); 
 }
 
-/* Date Input Section */
 .date-input {
     margin-bottom: 30px;
 }
@@ -73,7 +69,6 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Countdown Timer Styling */
 .countdown {
     display: flex;
     justify-content: center;
@@ -88,7 +83,6 @@ h1 {
     position: relative;
 }
 
-/* Countdown Number Styling */
 .countdown div span {
     display: block;
     font-size: 2.5rem;
@@ -105,7 +99,6 @@ h1 {
     margin-top: 5px;
 }
 
-/* Keyframes for Scrolling Effect */
 @keyframes scroll-up {
     0% {
         transform: translateY(100%);
@@ -121,7 +114,6 @@ h1 {
     }
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 600px) {
     .countdown div {
         width: 80px;
