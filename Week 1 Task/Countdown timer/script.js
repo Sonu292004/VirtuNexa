@@ -1,8 +1,7 @@
 let countdownInterval;
 
-// Function to start the countdown
 function startCountdown(targetDate) {
-  clearInterval(countdownInterval); // Clear any existing interval
+  clearInterval(countdownInterval);
 
   const targetTime = new Date(targetDate).getTime();
 
@@ -17,7 +16,6 @@ function startCountdown(targetDate) {
       return;
     }
 
-    // Calculate time components
     const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
       (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -25,7 +23,6 @@ function startCountdown(targetDate) {
     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    // Update the UI
     document.getElementById("days").innerText = days
       .toString()
       .padStart(2, "0");
@@ -41,7 +38,6 @@ function startCountdown(targetDate) {
   }, 1000);
 }
 
-// Add event listener to the button
 document.getElementById("start-button").addEventListener("click", () => {
   const targetDate = document.getElementById("target-date").value;
   if (targetDate) {
