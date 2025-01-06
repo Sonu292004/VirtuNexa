@@ -1,0 +1,138 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, yellow, red);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header with Glow Effect */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff80ff, 0 0 30px #ff80ff, 0 0 40px #ff80ff;
+}
+
+/* Blur Effect Styling */
+.blur-effect {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+/* Date Input Section */
+.date-input {
+    margin-bottom: 30px;
+}
+
+.date-input label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    color: #f3f3f3;
+}
+
+.date-input input {
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.date-input input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+}
+
+.date-input button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    background: red;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.date-input button:hover {
+    background-color: #f54f4f;
+    transform: scale(1.05);
+}
+
+/* Countdown Timer Styling */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.countdown div {
+    width: 100px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Countdown Number Styling */
+.countdown div span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    animation: scroll-up 1s ease-in-out;
+}
+
+.countdown div small {
+    display: block;
+    font-size: 1rem;
+    color: #f3f3f3;
+    margin-top: 5px;
+}
+
+/* Keyframes for Scrolling Effect */
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-10%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .countdown div {
+        width: 80px;
+        padding: 15px;
+    }
+
+    .countdown div span {
+        font-size: 2rem;
+    }
+
+    .date-input input {
+        width: 150px;
+    }
+}

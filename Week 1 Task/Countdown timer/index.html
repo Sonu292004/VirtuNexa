@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    
+    <div class="date-input blur-effect">
+        <label for="target-date">Enter Target Date and Time:</label>
+        <input type="datetime-local" id="target-date">
+        <button id="start-button">Start Countdown</button>
+    </div>
+
+    <div class="countdown">
+        <div class="countdown-section blur-effect">
+            <span id="days">00</span>
+            <small>Days</small>
+        </div>
+
+        <div class="countdown-section blur-effect">
+            <span id="hours">00</span>
+            <small>Hours</small>
+        </div>
+
+        <div class="countdown-section blur-effect">
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+        </div>
+
+        <div class="countdown-section blur-effect">
+            <span id="seconds">00</span>
+            <small>Seconds</small>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
