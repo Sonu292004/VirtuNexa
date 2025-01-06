@@ -1,4 +1,3 @@
-// Function to validate user input
 function validateInput(value) {
   const number = parseInt(value, 10);
   if (isNaN(number) || number < 0) {
@@ -8,7 +7,6 @@ function validateInput(value) {
   return number;
 }
 
-// Iterative Factorial
 function factorialIterative(n) {
   let result = 1;
   for (let i = 1; i <= n; i++) {
@@ -17,7 +15,6 @@ function factorialIterative(n) {
   return result;
 }
 
-// Recursive Factorial
 function factorialRecursive(n) {
   if (n === 0 || n === 1) {
     return 1;
@@ -25,7 +22,6 @@ function factorialRecursive(n) {
   return n * factorialRecursive(n - 1);
 }
 
-// Display Result
 function displayResult(value, method, result) {
   const output = document.getElementById("output");
   output.innerHTML = `
@@ -35,7 +31,6 @@ function displayResult(value, method, result) {
     `;
 }
 
-// Event Listeners for Buttons
 document.getElementById("iterativeButton").addEventListener("click", () => {
   const input = document.getElementById("numberInput").value;
   const number = validateInput(input);
